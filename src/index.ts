@@ -5,11 +5,11 @@ import deleteData from "./delete";
 import upsert from "./upsert";
 
 const main = async () => {
-  // find();
+  find();
   // create();
   // update();
   // deleteData();
-  upsert();
+  // upsert();
 };
 
 main();

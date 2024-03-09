@@ -6,6 +6,12 @@ const find = async () => {
   // get all
   const allAllDataFromDB = await prisma.post.findMany();
 
+  const allAllDataFromDBWithSelect = await prisma.post.findMany({
+    select: {
+      title: true,
+    },
+  });
+
   const getFirstDataFromDB = await prisma.post.findFirst({
     where: {
       published: false,
@@ -30,7 +36,7 @@ const find = async () => {
   //     },
   //   });
 
-  console.log({ getUniqueDataFromDB });
+  console.log({ allAllDataFromDBWithSelect });
 };
 
 export default find;
