@@ -33,6 +33,42 @@ const create = async () => {
         authorName: "test 5",
         content: "test 5",
       },
+
+      {
+        title: "test 3",
+        authorName: "test 3",
+        content: "test 3",
+      },
+
+      {
+        title: "test 4",
+        authorName: "test 4",
+        content: "test 4",
+      },
+
+      {
+        title: "test 5",
+        authorName: "test 5",
+        content: "test 5",
+      },
+
+      {
+        title: "test 3",
+        authorName: "test 3",
+        content: "test 3",
+      },
+
+      {
+        title: "test 4",
+        authorName: "test 4",
+        content: "test 4",
+      },
+
+      {
+        title: "test 5",
+        authorName: "test 5",
+        content: "test 5",
+      },
     ],
   });
 
