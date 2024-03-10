@@ -11,7 +11,7 @@ const main = async () => {
   // update();
   // deleteData();
   // upsert();
-  paginationSoring();
+  // paginationSoring();
 };
 
 main();
