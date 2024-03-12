@@ -60,20 +60,46 @@ const create = async () => {
 
   // console.log(createCategory);
 
+  // const createPost = await prisma.post.create({
+  //   data: {
+  //     title: "Title 1",
+  //     content: "Content 1",
+  //     authorId: 3,
+  //     postCategory: {
+  //       create: {
+  //         // categoryId: 1,
+  //         category: {
+  //           connect: {
+  //             id: 1,
+  //           },
+  //         },
+  //       },
+  //     },
+  //   },
+  //   include: {
+  //     postCategory: true,
+  //   },
+  // });
+
+  // console.log(createPost);
+
   const createPost = await prisma.post.create({
     data: {
-      title: "Title 1",
-      content: "Content 1",
+      title: "Title 4",
+      content: "Content 4",
       authorId: 3,
       postCategory: {
-        create: {
-          // categoryId: 1,
-          category: {
-            connect: {
-              id: 1,
-            },
+        create: [
+          {
+            categoryId: 1,
           },
-        },
+          {
+            categoryId: 4,
+          },
+          {
+            categoryId: 5,
+          },
+        ],
       },
     },
     include: {
