@@ -11,6 +11,7 @@ import aggregates from "./aggregates";
 import groupBy from "./groupBy";
 import batchTransaction from "./batch";
 import interactiveTransaction from "./interactive";
+import rawQuery from "./raw-query";
 
 const main = async () => {
   // find();
@@ -25,7 +26,8 @@ const main = async () => {
   // aggregates();
   // groupBy();
   // batchTransaction();
-  interactiveTransaction();
+  // interactiveTransaction();
+  rawQuery();
 };
 
 main();
