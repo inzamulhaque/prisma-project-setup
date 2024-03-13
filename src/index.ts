@@ -10,6 +10,7 @@ import logging from "./logging";
 import aggregates from "./aggregates";
 import groupBy from "./groupBy";
 import batchTransaction from "./batch";
+import interactiveTransaction from "./interactive";
 
 const main = async () => {
   // find();
@@ -23,7 +24,8 @@ const main = async () => {
   // logging();
   // aggregates();
   // groupBy();
-  batchTransaction();
+  // batchTransaction();
+  interactiveTransaction();
 };
 
 main();
